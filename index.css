@@ -1,0 +1,65 @@
+* {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #40BFBD;
+}
+
+li {
+    list-style: none;
+}
+
+address {
+    font-size: 40px;
+    display: block;
+    line-break: auto;
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1280px) {
+    header {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+    }
+    main {
+        display: flex;
+        flex-direction: row;
+    }
+}
+
+
+/* for tablets */
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    main {
+        display: block;
+        text-align: center;
+    }
+    header {
+        display: block;
+    }
+}
+
+
+/* for mobiles */
+
+@media screen and (min-width: 319px) and (max-width: 767px) {
+    main {
+        display: block;
+        text-align: center;
+    }
+    header {
+        display: block;
+    }
+}
+
+
+/* even smaller screens */
+
+@media screen and (max-width: 319px) {
+    main {
+        display: block;
+        text-align: center;
+    }
+    header {
+        display: block;
+    }
+}

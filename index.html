@@ -3,6 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="index.css">
     <title>React Hello World</title>
 </head>
 
@@ -15,17 +16,18 @@
     <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js">
     </script>
     <script type="text/babel">
-        ReactDOM.render(
+        function App(props){ console.log(props); return(
         <main>
             <section>
                 <header>
-                    <h1>Contact Info</h1>
+                    <h1>{props.children}</h1>
+                    <address>
+                    Email:Sallystudent@gmail.com
+                    </address>
+                    <address>
+                    phone number:646-464-4466
+                    </address>
                 </header>
-                <h2>Sally Student</h2>
-                <address>
-				          <p>My Email:<a href="Sallystudent@gmail.com">Sallystudent@gmail.com</a></p>
-			          </address>
-                <p> My phone number: 646-464-4466</p>
                 <img src="https://m.media-amazon.com/images/M/MV5BMTY5NzE3NzU3MF5BMl5BanBnXkFtZTgwMjg0NTQ5MDE@._V1_.jpg" alt="my picture" />
             </section>
             <section>
@@ -50,7 +52,11 @@
                     </li>
                 </ul>
             </section>
-        </main>, document.querySelector('#application-root') );
+        </main>
+        ) } ReactDOM.render(
+        <App>
+            Sally Student
+        </App>, document.querySelector('#application-root') );
     </script>
 </body>
 
