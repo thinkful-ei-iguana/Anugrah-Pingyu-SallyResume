@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>React Hello World</title>
+</head>
+
+<body>
+    <div id="application-root"></div>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js">
+    </script>
+    <script src="https://unpkg.com/react@16/umd/react.development.js">
+    </script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js">
+    </script>
+    <script type="text/babel">
+        ReactDOM.render(
+        <main>
+            <section>
+                <header>
+                    <h1>Contact Info</h1>
+                </header>
+                <h2>Sally Student</h2>
+                <address>
+				<p>My Email:<a href="Sallystudent@gmail.com">Sallystudent@gmail.com</a></p>
+			</address>
+                <p> My phone number: 646-464-4466</p>
+                <img src="https://m.media-amazon.com/images/M/MV5BMTY5NzE3NzU3MF5BMl5BanBnXkFtZTgwMjg0NTQ5MDE@._V1_.jpg" alt="my picture" />
+            </section>
+            <section>
+                <h1>Education</h1>
+                <p>Bachelor's degree in Computer Science from USC </p>
+            </section>
+
+            <section>
+                <h1>Employment History</h1>
+                <ul>
+                    <li>Junior Web Developer
+                        <p>ABc Tech Company</p>
+                        <p>2015-2018</p>
+                        <p>My Responsibilities: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Eu tincidunt tortor aliquam nulla facilisi cras fermentum odio. Quis lectus nulla
+                            at volutpat diam ut venenatis tellus. </p>
+                    </li>
+                    <li> Web Developer
+                        <p> Comms Tech </p>
+                        <p>2018-2019</p>
+                        <p>My Responsibilities: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Eu tincidunt tortor aliquam nulla facilisi cras fermentum odio. Quis lectus nulla
+                            at volutpat diam ut venenatis tellus. </p>
+                    </li>
+                </ul>
+            </section>
+        </main>, document.querySelector('#application-root') );
+    </script>
+</body>
+
+</html>
